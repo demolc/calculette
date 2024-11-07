@@ -28,7 +28,8 @@ jobs:  # exécution de ce que je veux lancer
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: hello world
-      run: echo 'coucou' # tout est possible en shell
+      #run: echo 'coucou' # tout est possible en shell
+      run: wft
       
     - name: Build with Maven  # avantage du build maven : lance les tests :)
       run: mvn -B package --file pom.xml
